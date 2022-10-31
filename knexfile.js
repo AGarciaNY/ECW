@@ -3,16 +3,17 @@
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
- module.exports = {
+module.exports = {
+   
   development: {
     client: 'pg',
     connection: {
-      database: 'marcy_chat',
-      user:     'root',
-      password: 'e',
-      port: 5433,
+      database: 'todo-list',
+      user:     'aldair',
+      password: 'a'
     }
   },
+  
   production: {
     client: 'pg',
     connection: process.env.DATABASE_URL
